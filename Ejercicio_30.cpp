@@ -7,8 +7,8 @@ int main() {
   char gradoGrupo[10];
   int intentos = 0;
 
-  const char *nombreCorrecto = "nathaly"; 
-  const char *gradoGrupoCorrecto = "2b6";
+  const char *nombreCorrecto = "JepG"; 
+  const char *gradoGrupoCorrecto = "2bmpg";
 
   while (intentos < 3) {
     intentos++;
