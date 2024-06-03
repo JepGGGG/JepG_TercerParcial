@@ -10,7 +10,7 @@ int main() {
     cin>>nombre;
     cout<<"dime tu grupo grado y numero de lista ";
     cin>>grupoLista;
-    if (strcmp(nombre, "nathaly") == 0 && strcmp(grupoLista, "2b6") == 0) {
+    if (strcmp(nombre, "JepG") == 0 && strcmp(grupoLista, "2bmpg") == 0) {
       cout<<"Bienvenido al sistema";
       break;
     } else {
