@@ -6,7 +6,6 @@ int main()
     int x, b, B, h;
     float z;
     cout << "CALCULO DE AREAS\n";
-    cout << "____________________\n";
     cout << "1.Calcular el area de un triangulo.\n";
     cout << "2.Calcular el area de un trapecio.\n";
     cout << "3.Calcular el area de un rectangulo.\n";
