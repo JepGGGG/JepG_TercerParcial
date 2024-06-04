@@ -1,26 +1,33 @@
-#include <iostream>
-
+#include<iostream>
 using namespace std;
+int main(){
+    int x;
+    cout << "Ingrese un numero: " << endl;
+    cin >> x;
+    switch (x){
+    {
+    case 1:
+        cout << "As" << endl;
+        break;
+    case 10:
+        cout << "Sota" << endl;
+        break;
+    case 11:
+        cout << "Caballo" << endl;
+        break;
+    case 12:
+        cout << "Rey" << endl;
+        break;
+    default:
+    if(x>=2 && x<=9){
+        cout << "No es ninguna figura, ni tampoco As." << endl;
+    }
+    else{
+    cout << "No es ningun numero de la baraja española. " << endl;
+    }
+        break;
+    }
 
-int main() {
-  // Pedimos el tamaño del arreglo
-  int n;
-  cout << "Digite el tamaño del arreglo: ";
-  cin >> n;
-
-  // Creamos un arreglo llamado 'num' de tipo entero con 'n' elementos
-  int num[n];
-
-  // Pedimos datos para cada posición del arreglo
-  for (int i = 0; i < n; i++) {
-    cout << "Digite un número para la posición " << i << ": ";
-    cin >> num[i];
-  }
-
-  // Imprimimos los datos del arreglo
-  for (int i = 0; i < n; i++) {
-    cout << "El dato en la posición " << i << " es: " << num[i] << endl;
-  }
-
-  return 0;
+    return 0;
+    }
 }
