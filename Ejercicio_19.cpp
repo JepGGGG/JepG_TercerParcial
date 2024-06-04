@@ -1,12 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main(){
+int main()
+{
+    char x[100];
+    cout << "Ingrese su nombre: " << endl;
+    //cin << x;
+    fgets << x << sizeof(x),stdin << endl;
+    cout << "Hola, " << x << endl;
+    
 
-int i;
-
-for(i=100;i>=1;i--){
-	cout<<i;
-}
-
-return 0;
+    return 0;
 }
