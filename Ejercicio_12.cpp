@@ -1,29 +1,23 @@
-#include <iostream> 
-int main() {
-  int numero, mayor, menor, suma;
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    int codigo, farenheit, cord_x, cord_y;
+    codigo = 3467;
+    farenheit = 123.456;
+    cord_x = 525;
+    cord_y = 725;
+    a = b = c = 45;
+    a = (a = (c = 40));
 
-  std::cout << "Ingrese el primer número: ";
-  std::cin >> numero;
+    cout << "Valor de la variable codigo: " << codigo << endl;
+    cout << "Valor de la variable FARENHEIT" << farenheit << endl;
+    cout << "El valor de la variable CORD_X " << cord_x << endl;
+    cout << "El valor de la variable CORD_Y " << cord_y << endl;
+    cout << "El valor de la variable A " << a << endl;
+    cout << "El valor de la variable B " << b << endl;
+    cout << "El valor de la variable C " << c << endl;
 
-  mayor = numero;
-  menor = numero;
-
-  for (int i = 2; i <= 10; ++i) {
-    std::cout << "Ingrese el número " << i << ": ";
-    std::cin >> numero;
-
-  
-    mayor = std::max(mayor, numero);
-
-
-    menor = std::min(menor, numero);
-
-    suma += numero;
-  }
-
-  std::cout << "El número mayor es: " << mayor << std::endl;
-  std::cout << "El número menor es: " << menor << std::endl;
-  std::cout << "La suma de los números es: " << suma << std::endl;
-
-  return 0;
+        return 0;
 }
