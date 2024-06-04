@@ -9,6 +9,5 @@ int main()
     cout << "Precio: \n"<< precio;
     subtotal = unidad * precio;
     cout <<subtotal;
-
     return 0;
 }

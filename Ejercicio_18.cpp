@@ -1,12 +1,15 @@
 #include <iostream>
+
 using namespace std;
-int main()
-{
+
+int main() {
     float f, c;
-    cout << "Ingrese los grados Farenheit: " << endl;
+
+    cout << "Ingrese los grados Fahrenheit: "; 
     cin >> f;
-    c = (f - 32) * 5 / 9;
-    cout << "El resultado en grados Celsius es de: " << c << endl;
+
+    c = (f - 32) * 5.0f / 9.0f; 
+    cout << "El resultado en grados Celsius es de: " << c << '\n'; 
 
     return 0;
 }

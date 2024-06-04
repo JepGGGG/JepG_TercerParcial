@@ -1,13 +1,15 @@
 #include <iostream>
+#include <string> 
+
 using namespace std;
-int main()
-{
-    char x[100];
-    cout << "Ingrese su nombre: " << endl;
-    //cin << x;
-    fgets << x << sizeof(x),stdin << endl;
-    cout << "Hola, " << x << endl;
-    
+
+int main() {
+    string nombre; 
+
+    cout << "Ingrese su nombre: "; 
+    getline(cin, nombre); // 
+
+    cout << "Hola, " << nombre << '\n'; 
 
     return 0;
 }

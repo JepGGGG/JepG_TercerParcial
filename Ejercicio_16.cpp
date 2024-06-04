@@ -1,12 +1,18 @@
 #include <iostream>
+
 using namespace std;
-int main()
-{
-    int edad, mayoredad, juvenil;
+
+int main() {
+    int edad;
     cin >> edad;
-    mayoredad = (edad > 18);
-    juvenil = (edad > 15) && (edad <= 18);
-    cout << "";
+
+    if (edad > 18) {
+        cout << "Mayor de edad\n"; 
+    } else if (edad > 15) { 
+        cout << "Juvenil\n";
+    } else {
+        cout << "Menor de edad\n";
+    }
 
     return 0;
 }
