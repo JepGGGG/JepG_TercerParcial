@@ -1,45 +1,22 @@
-#include <iostream>
-#include <string.h>
+##include<iostream>
+#define bol 70
 using namespace std;
-int main() {
-  char nombre[20];
-  char grupoLista[20];
-  int intentos = 0;
-  do {
-    cout<<"dime tu nombre ";
-    cin>>nombre;
-    cout<<"dime tu grupo grado y numero de lista ";
-    cin>>grupoLista;
-    if (strcmp(nombre, "JepG") == 0 && strcmp(grupoLista, "2bmpg") == 0) {
-      cout<<"Bienvenido al sistema";
-      break;
-    } else {
-      intentos++;
-      cout<<"Datos incorrectos intentos restantes"<< 3 - intentos<<endl;
+int main(){
+    float p1,p2; 
+    int e;
+    cout << "Ingrese su edad: " << endl;
+    cin >> e;
+    p2 = bol-(bol*0.55);
+    p1 = bol-(bol*0.6);
+    if(e<5){
+        cout << "El precio del boleto es de: $" << p1 << endl;
     }
-  } while (intentos < 3);
-  if (intentos == 3) {
-    cout<<"Lo sentimos ha superado el número máximo de intentos permitidos";
-  }
-  float Unidad, cantidad, importeTotal = 0;
-  do {
-    cout<<"Introduzca el precio unitario del artículo si quiere terminar ingrese 0 ";
-    cin>>Unidad;
-    if (Unidad <= 0) {
-      cout<<"el precio unitario debe ser un número positivo";
-      continue;
+    else if(e>60){
+        cout << "El precio del boleto es de: $" << p2 << endl;
     }
-    cout<<"Introduzca la cantidad vendida ";
-    cin>>cantidad;
-    if (cantidad <= 0) {
-      cout<<"Error la cantidad vendida debe ser un número positivo";
-      continue;
+    else{
+        cout << "El precio del boleto es de: $70" << endl;
     }
-    importeTotal +=Unidad * cantidad;
-    cout<<"Importe parcial"<<importeTotal<<endl;
-  } while (Unidad != 0);
-  cout<<"Importe total de la factura"<<importeTotal<<endl;
 
-  return 0;
-
+    return 0;
 }
