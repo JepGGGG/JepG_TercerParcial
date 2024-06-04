@@ -1,35 +1,32 @@
 #include <iostream>
 
-#define FILAS 4
-#define COLUMNAS 3
-
 int main() {
-  int tabla[FILAS][COLUMNAS];
-  int suma_columnas[COLUMNAS];
+  int numeroDeEntrada, numeroMayor, numeroMenor, suma;
 
-  for (int fila = 0; fila < FILAS; fila++) {
-    for (int columna = 0; columna < COLUMNAS; columna++) {
-      std::cout << "Introduce un valor para la fila " << fila + 1 << ", columna " << columna + 1 << ": ";
-      std::cin >> tabla[fila][columna];
+  std::cout << "Ingrese el primer número: ";
+  std::cin >> numeroDeEntrada;
+
+  numeroMayor = numeroDeEntrada;
+  numeroMenor = numeroDeEntrada;
+  suma = numeroDeEntrada;
+
+  for (int i = 2; i <= 10; ++i) {
+    std::cout << "Ingrese el número " << i << ": ";
+    if (std::cin >> numeroDeEntrada) {
+      numeroMayor = std::max(numeroMayor, numeroDeEntrada);
+      numeroMenor = std::min(numeroMenor, numeroDeEntrada);
+      suma += numeroDeEntrada;
+    } else {
+      std::cerr << "Error al ingresar el número. Intente nuevamente." << std::endl;
+      std::cin.clear(); 
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
+      i--; 
     }
   }
 
-  for (int columna = 0; columna < COLUMNAS; columna++) {
-    suma_columnas[columna] = 0;
-    for (int fila = 0; fila < FILAS; fila++) {
-      suma_columnas[columna] += tabla[fila][columna];
-    }
-  }
-
-  int mayor_suma = suma_columnas[0];
-  for (int columna = 1; columna < COLUMNAS; columna++) {
-    if (suma_columnas[columna] > mayor_suma) {
-      mayor_suma = suma_columnas[columna];
-    }
-  }
-
- 
-  std::cout << "La mayor suma de columna es: " << mayor_suma << std::endl;
+  std::cout << "El número mayor es: " << numeroMayor << std::endl;
+  std::cout << "El número menor es: " << numeroMenor << std::endl;
+  std::cout << "La suma de los números es: " << suma << std::endl;
 
   return 0;
 }
