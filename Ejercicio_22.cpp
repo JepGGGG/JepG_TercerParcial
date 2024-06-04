@@ -1,15 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main (){
+int main(){
+    int x, y, z1, z2;
+    cin >> x;
+    cin >> y;
+    z1 = x/y;
+    z2 = x%y;
+    cout << z1 << " " <<z2;
 
-int i=100;
-do{
-	cout<<i;
-	i--;
- }
-  while(i>=1);
-
-
-return 0;
+    return 0;
 }
