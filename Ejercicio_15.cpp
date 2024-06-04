@@ -1,22 +1,12 @@
-#include<iostream>
+
+#include <iostream>
 using namespace std;
-int main (){
+int main(){
+    int n = 5, t;
+    cout << "El valor de t es: " << t << endl; 
+    t = ++n * --n;
+    cout << "n=" << n << ", t=" << t << endl;
+    cout << ++n << ++n << ++n << endl;
 
-int edad,entrada,ndescuento,adescuento;
-entrada=70;
-cout<<"dime tu edad";
-cin>>edad;
-
-if(edad<=5){
-cout<<"tiene un descuento de %60";
-ndescuento=entrada*0.60;
-cout<<"la entrada con el descuento seria "<<ndescuento<<endl;
-}
-if(edad>=60){;
-cout<<"tiene un descuento de %55";
-adescuento=entrada*0.55;
-cout<<"la entrada con el descuento seria " <<adescuento<<endl;
-}
-return 0;
-
+    return 0;
 }
