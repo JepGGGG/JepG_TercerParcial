@@ -1,20 +1,15 @@
+
 #include <iostream>
-
 using namespace std;
+int main(){
+    int m = 45, n = 75;
+    cout << "m=" << m << ", n=" << n << endl;
+    ++m;
+    --n;
+    cout << "m=" << m << ", n=" << n << endl;
+    m++;
+    n--;
+    cout << "m=" << m << ", n=" << n << endl;
 
-int main() {
-  double base;
-  int potencia;
-
-  cout << "Ingrese el número base: ";
-  cin >> base;
-
-  cout << "Ingrese la potencia: ";
-  cin >> potencia;
-
-  double resultado = pow(base, potencia);
-
-  cout << base << " elevado a la potencia " << potencia << " es: " << resultado << endl;
-
-  return 0;
+    return 0;
 }
