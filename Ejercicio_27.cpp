@@ -1,30 +1,21 @@
 #include <iostream>
-#include <string.h>
 using namespace std;
-
-int main() {
-  char usuario[20];
-  char contrasena[20];
-  int intentos = 0;
-
-  do {
-    cout<<"dime tu usuario ";
-    cin>>usuario;
-
-    cout<<"dime tu contraseña ";
-    cin>>contrasena;
-
-    if (strcmp(usuario, "root") == 0 && strcmp(contrasena, "1234") == 0) {
-      cout<<"Bienvenido al sistema";
-      break;
-    } else {
-      intentos++;
-      cout<<"Datos incorrectos intentos restantes"<<3 - intentos<<endl;
+int main()
+{
+    int x;
+    cout << "Ingree dos numeros: " << endl;
+    cin << x 
+    if (x % 2 == 0)
+    {
+        cout << "El numero es par" << endl;
+        if (x % 3 == 0)
+        {
+            cout << "El numero es divisible entre 3" << endl;
+        }
     }
-  } while (intentos < 3);
-
-  if (intentos == 3) {
-    cout<<"Lo sentimos ha superado el número máximo de intentos permitidos";
-  }
-  return 0;
+    else {
+        cout << "El numero es impar" << endl;
+    }
+    
+    return 0;
 }
