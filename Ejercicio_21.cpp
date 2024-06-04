@@ -1,15 +1,13 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-
-int main (){
-
-int i=2;
-do{
-	cout<<i;
-	i+=2;
- }
-  while(i<=100);
+int main(){
+    int fecha, edad;
+    cout << "Hola" << endl;
+    cout << "Introduzca el año en que nacio: " << endl;
+    cin >> fecha;
+    edad = 2024 - fecha;
+    cout <<"Si usted nacio en: " << fecha << ", en este año cumple: " << edad << endl;
 
 
-return 0;
+    return 0;
 }
