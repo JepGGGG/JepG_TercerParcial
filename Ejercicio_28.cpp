@@ -1,30 +1,20 @@
-#include <iostream>
-#include <string.h>
+
+#include<iostream>
 using namespace std;
-
-
-int main() {
-  char nombre[20];
-  char grupoLista[20];
-  int intentos = 0;
-
-  do {
-    cout<<"dime tu nombre ";
-    cin>>nombre;
-
-    cout<<"dime tu grupo grado y numero de lista ";
-    cin>>grupoLista;
-
-    if (strcmp(nombre, "JepG") == 0 && strcmp(grupoLista, "2bmpg") == 0) {
-      cout<<"Bienvenido al sistema";
-      break;
-    } else {
-      intentos++;
-      cout<<"Datos incorrectos intentos restantes"<< 3 - intentos<<endl;
+int main(){
+    int x,y;
+    cout << "Ingrese dos numeros: " << endl; 
+    cin >> x;
+    cin >> y;
+    if(x==y){
+        cout << "Los numeros son iguales" << endl;
     }
-  } while (intentos < 3);
-  if (intentos == 3) {
-    cout<<"Lo sentimos ha superado el número máximo de intentos permitidos";
-  }
-  return 0;
+    else if(x>y){
+        cout << "El primer numero es mayor que el segundo" << endl;
+    }
+    else{
+        cout << "El segundo numero es mayor que el primero" << endl;
+    }
+
+    return 0;
 }
