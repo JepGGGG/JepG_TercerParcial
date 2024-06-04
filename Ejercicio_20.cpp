@@ -1,15 +1,13 @@
-#include<iostream>
+#include <iostream>
+#define PI 3.141592
 using namespace std;
+int main(void)
+{
+    float radio, perimetro;
+    cout << "Introduzca el radio: " << endl;
+    cin >> radio;
+    perimetro = 2*PI*radio;
+    cout << perimetro << endl;
 
-int main (){
-
-int i=1;
-do{
-	cout<<i;
-	i++;
- }
-  while(i<=100);
-
-
-return 0;
+    return 0;
 }
