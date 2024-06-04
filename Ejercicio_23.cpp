@@ -1,20 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-#include<math.h>
 
 int main(){
+    int a = 5, b =  7, c = 9, suma = 0;
+    cout << "El valor de a, b, c, son: " << a << " " << b << " " << c << endl;
+    cout << "Introducir el numero de las variables a,b,c" << endl;
+    cin >> a;
+    cin >> b;
+    cin >> c;
+    suma = a + b + c;
+    cout << "La suma de los numeros a,b,c es: " << suma << endl;
 
-int numero;
-int potencia;
-
-cout<<"dime el numero que quieres elevar";
-cin>>numero;
-
-cout<<"dime la potencia";
-cin>>potencia;
-
-float resultado=pow(numero,potencia);
-
-cout<<numero<< " elevado a la potencia de" <<potencia<< "es" <<resultado<<endl;
-return 0;
+    return 0;
 }
